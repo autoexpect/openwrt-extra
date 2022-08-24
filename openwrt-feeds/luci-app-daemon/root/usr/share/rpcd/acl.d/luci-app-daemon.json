@@ -1,0 +1,15 @@
+{
+    "luci-app-daemonn": {
+        "description": "Grant UCI access for luci-app-daemon",
+        "read": {
+            "uci": [
+                "daemon"
+            ]
+        },
+        "write": {
+            "uci": [
+                "daemon"
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+
+config ipsets
+	option ipset_name 'ss_spec_dst_fw'
+	option dns_forward '0'
+	option upstream_dns_server '101.6.6.6#5353'
+	option enabled '0'
+	list managed_domain 'github.com'
+	list managed_domain 'download.proxmox.com'
+	list managed_domain 'ftp.debian.org'
+	list managed_domain 'archive.ubuntu.com'
+	list managed_domain 'ubuntu.com'

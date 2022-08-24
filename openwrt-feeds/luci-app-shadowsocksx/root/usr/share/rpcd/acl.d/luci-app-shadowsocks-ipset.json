@@ -1,0 +1,15 @@
+{
+    "luci-app-shadowsocksx": {
+        "description": "Grant UCI access for shadowsocks-ipset",
+        "read": {
+            "uci": [
+                "shadowsocks-ipset"
+            ]
+        },
+        "write": {
+            "uci": [
+                "shadowsocks-ipset"
+            ]
+        }
+    }
+}

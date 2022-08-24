@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > /tmp/chnroute.txt && mv /tmp/chnroute.txt /etc/chnroute.txt
+curl -s -L -o /tmp/ipset_gfwlist.txt https://github.com/gfwlist/gfwlist/raw/master/gfwlist.txt && mv /tmp/ipset_gfwlist.txt /etc/ipset_gfwlist.txt
