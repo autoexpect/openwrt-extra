@@ -27,4 +27,7 @@ config servers
 	option encrypt_method 'rc4-md5'
 
 config access_control
-	option self_proxy '1'
+	option wan_bp_list '/etc/chnroute.txt'
+	option wan_fw_list '/etc/fw_ip_list.txt'
+	option lan_target 'RETURN'
+	option self_proxy '0'
