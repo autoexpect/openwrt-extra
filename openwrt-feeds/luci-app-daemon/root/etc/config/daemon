@@ -1,6 +1,0 @@
-
-config daemon 'main'
-	option enabled '1'
-	option watchnet '0'
-	option exestart 'logger daemon started'
-	option exestop 'logger daemon stopped'
